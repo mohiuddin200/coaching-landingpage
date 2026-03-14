@@ -62,10 +62,10 @@ export function HowItWorks() {
 
         {/* Steps */}
         <div className="relative max-w-4xl mx-auto">
-          {/* Connecting Line */}
-          <div className="absolute left-8 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-border hidden sm:block" />
+          {/* Connecting Line — centered on icons */}
+          <div className="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-border" />
 
-          <div className="space-y-12 sm:space-y-16">
+          <div className="space-y-16">
             {steps.map((step, i) => {
               const Icon = step.icon;
               const isEven = i % 2 === 0;
@@ -76,32 +76,30 @@ export function HowItWorks() {
                   delay={i * 0.15}
                   direction={isEven ? "left" : "right"}
                 >
-                  <div
-                    className={`relative flex flex-col sm:flex-row items-start sm:items-center gap-6 ${
-                      isEven ? "md:flex-row" : "md:flex-row-reverse"
-                    }`}
-                  >
-                    {/* Content Card */}
+                  <div className="relative grid grid-cols-[1fr_64px_1fr] items-center gap-0 md:gap-8">
+                    {/* Left content (shows for even steps on md+) */}
                     <div
-                      className={`flex-1 ${
-                        isEven ? "md:text-right md:pr-12" : "md:text-left md:pl-12"
+                      className={`hidden md:block ${
+                        isEven ? "text-right pr-4" : ""
                       }`}
                     >
-                      <div className="inline-block">
-                        <span className="text-xs font-bold text-primary tracking-widest">
-                          STEP {step.number}
-                        </span>
-                        <h3 className="text-xl font-bold text-text-primary mt-1 mb-2">
-                          {step.title}
-                        </h3>
-                        <p className="text-text-secondary text-sm leading-relaxed max-w-sm">
-                          {step.description}
-                        </p>
-                      </div>
+                      {isEven && (
+                        <div className="inline-block">
+                          <span className="text-xs font-bold text-primary tracking-widest">
+                            STEP {step.number}
+                          </span>
+                          <h3 className="text-xl font-bold text-text-primary mt-1 mb-2">
+                            {step.title}
+                          </h3>
+                          <p className="text-text-secondary text-sm leading-relaxed max-w-sm ml-auto">
+                            {step.description}
+                          </p>
+                        </div>
+                      )}
                     </div>
 
-                    {/* Circle */}
-                    <div className="relative z-10 shrink-0 order-first sm:order-none">
+                    {/* Center icon — always on the line */}
+                    <div className="relative z-10 flex justify-center">
                       <div
                         className={`w-16 h-16 rounded-2xl ${step.color} flex items-center justify-center shadow-lg`}
                       >
@@ -109,8 +107,39 @@ export function HowItWorks() {
                       </div>
                     </div>
 
-                    {/* Spacer for the other side */}
-                    <div className="flex-1 hidden md:block" />
+                    {/* Right content (shows for odd steps on md+) */}
+                    <div
+                      className={`hidden md:block ${
+                        !isEven ? "pl-4" : ""
+                      }`}
+                    >
+                      {!isEven && (
+                        <div className="inline-block">
+                          <span className="text-xs font-bold text-primary tracking-widest">
+                            STEP {step.number}
+                          </span>
+                          <h3 className="text-xl font-bold text-text-primary mt-1 mb-2">
+                            {step.title}
+                          </h3>
+                          <p className="text-text-secondary text-sm leading-relaxed max-w-sm">
+                            {step.description}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Mobile: content below icon (visible only on small screens) */}
+                    <div className="md:hidden col-span-3 mt-4 text-center">
+                      <span className="text-xs font-bold text-primary tracking-widest">
+                        STEP {step.number}
+                      </span>
+                      <h3 className="text-xl font-bold text-text-primary mt-1 mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-text-secondary text-sm leading-relaxed max-w-sm mx-auto">
+                        {step.description}
+                      </p>
+                    </div>
                   </div>
                 </ScrollReveal>
               );
