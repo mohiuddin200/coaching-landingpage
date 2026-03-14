@@ -16,14 +16,14 @@ const benefits = [
     title: "Self-Service",
     description:
       "No developer needed. Create, edit, and manage everything yourself through an intuitive interface.",
-    gradient: "from-indigo-500 to-blue-500",
+    gradient: "from-emerald-600 to-teal-500",
   },
   {
     icon: Layers,
     title: "All-in-One",
     description:
       "Replace spreadsheets, SMS apps, payment trackers, and paper registers with a single platform.",
-    gradient: "from-blue-500 to-cyan-500",
+    gradient: "from-emerald-500 to-teal-400",
   },
   {
     icon: Lock,
@@ -44,7 +44,7 @@ const benefits = [
     title: "Affordable",
     description:
       "Pricing designed for small to medium coaching institutes. Pay for what you need, scale when you grow.",
-    gradient: "from-violet-500 to-purple-500",
+    gradient: "from-amber-600 to-amber-500",
   },
   {
     icon: Smartphone,

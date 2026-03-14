@@ -87,7 +87,7 @@ function Particles({ count = 80 }: { count?: number }) {
       <bufferGeometry ref={geoRef} />
       <pointsMaterial
         size={0.03}
-        color="#818CF8"
+        color="#34D399"
         transparent
         opacity={0.6}
         sizeAttenuation
@@ -120,11 +120,11 @@ export function HeroScene() {
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 5]} intensity={0.8} />
 
-        <FloatingShape position={[-4, 2, -2]} geometry="icosahedron" color="#6366F1" speed={0.8} />
-        <FloatingShape position={[4, -1, -3]} geometry="torus" color="#0EA5E9" speed={1.2} />
-        <FloatingShape position={[-2, -2, -1]} geometry="octahedron" color="#818CF8" speed={0.6} />
-        <FloatingShape position={[3, 2.5, -4]} geometry="sphere" color="#A78BFA" speed={1} />
-        <FloatingShape position={[0, 3, -5]} geometry="icosahedron" color="#6366F1" speed={0.5} />
+        <FloatingShape position={[-4, 2, -2]} geometry="icosahedron" color="#059669" speed={0.8} />
+        <FloatingShape position={[4, -1, -3]} geometry="torus" color="#D97706" speed={1.2} />
+        <FloatingShape position={[-2, -2, -1]} geometry="octahedron" color="#34D399" speed={0.6} />
+        <FloatingShape position={[3, 2.5, -4]} geometry="sphere" color="#F59E0B" speed={1} />
+        <FloatingShape position={[0, 3, -5]} geometry="icosahedron" color="#059669" speed={0.5} />
 
         <Particles count={100} />
         <MouseFollower />

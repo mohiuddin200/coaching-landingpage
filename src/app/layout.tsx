@@ -18,7 +18,7 @@ const SITE_NAME = "CoachHub";
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#FAFBFC" },
-    { media: "(prefers-color-scheme: dark)", color: "#0B1120" },
+    { media: "(prefers-color-scheme: dark)", color: "#0A1A14" },
   ],
   width: "device-width",
   initialScale: 1,

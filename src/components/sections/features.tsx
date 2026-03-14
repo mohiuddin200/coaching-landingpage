@@ -18,18 +18,18 @@ const features = [
     title: "Smart Dashboard",
     description:
       "Get a bird's-eye view of your entire institute. Track students, revenue, attendance trends, and upcoming events — all updated in real-time.",
-    color: "from-indigo-500 to-purple-500",
-    bgColor: "bg-indigo-500/10",
-    textColor: "text-indigo-500",
+    color: "from-emerald-600 to-teal-500",
+    bgColor: "bg-emerald-600/10",
+    textColor: "text-emerald-600",
   },
   {
     icon: Users,
     title: "Student Management",
     description:
       "Enroll students in 3 simple steps. Track their entire journey — from admission to graduation. Manage profiles, assign batches, and track everything.",
-    color: "from-blue-500 to-cyan-500",
-    bgColor: "bg-blue-500/10",
-    textColor: "text-blue-500",
+    color: "from-emerald-500 to-teal-400",
+    bgColor: "bg-emerald-500/10",
+    textColor: "text-emerald-500",
   },
   {
     icon: CreditCard,
@@ -63,18 +63,18 @@ const features = [
     title: "Finance & Accounting",
     description:
       "Track student fees, teacher salaries, and organizational expenses. Auto-detect overdue payments. See your financial health at a glance.",
-    color: "from-violet-500 to-purple-500",
-    bgColor: "bg-violet-500/10",
-    textColor: "text-violet-500",
+    color: "from-amber-600 to-amber-500",
+    bgColor: "bg-amber-600/10",
+    textColor: "text-amber-600",
   },
   {
     icon: MessageSquare,
     title: "SMS Notifications",
     description:
       "Keep parents in the loop automatically. Attendance alerts, exam reminders, and result notifications — all sent via SMS in Bengali or English.",
-    color: "from-sky-500 to-blue-500",
-    bgColor: "bg-sky-500/10",
-    textColor: "text-sky-500",
+    color: "from-amber-500 to-yellow-500",
+    bgColor: "bg-amber-500/10",
+    textColor: "text-amber-500",
   },
   {
     icon: Shield,

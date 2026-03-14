@@ -4,8 +4,8 @@
   "description": "All-in-one cloud platform for coaching institute management",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0B1120",
-  "theme_color": "#6366F1",
+  "background_color": "#0A1A14",
+  "theme_color": "#059669",
   "icons": [
     {
       "src": "/icon-192.png",

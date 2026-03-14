@@ -20,14 +20,14 @@ const screenshots = [
     id: "dashboard",
     title: "Dashboard Overview",
     icon: LayoutDashboard,
-    gradient: "from-indigo-400 to-purple-500",
+    gradient: "from-emerald-400 to-teal-500",
     url: "app.coachhub.io/dashboard",
   },
   {
     id: "students",
     title: "Student List",
     icon: Users,
-    gradient: "from-blue-400 to-cyan-500",
+    gradient: "from-emerald-500 to-teal-400",
     url: "app.coachhub.io/students",
   },
   {
@@ -55,14 +55,14 @@ const screenshots = [
     id: "finance",
     title: "Finance Dashboard",
     icon: Wallet,
-    gradient: "from-violet-400 to-purple-500",
+    gradient: "from-amber-500 to-amber-600",
     url: "app.coachhub.io/finance",
   },
   {
     id: "sms",
     title: "SMS Settings",
     icon: MessageSquare,
-    gradient: "from-sky-400 to-blue-500",
+    gradient: "from-amber-400 to-yellow-500",
     url: "app.coachhub.io/sms",
   },
   {

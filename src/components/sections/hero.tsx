@@ -15,7 +15,7 @@ function HeroFallback() {
     <div
       className="absolute inset-0 -z-10"
       style={{
-        background: "linear-gradient(135deg, rgba(99,102,241,0.08) 0%, rgba(118,75,162,0.08) 100%)",
+        background: "linear-gradient(135deg, rgba(5,150,105,0.08) 0%, rgba(13,148,136,0.08) 100%)",
       }}
     />
   );
@@ -54,6 +54,9 @@ export function Hero() {
       <Suspense fallback={<HeroFallback />}>
         <HeroScene />
       </Suspense>
+
+      {/* Light-mode readability overlay */}
+      <div className="hero-light-overlay absolute inset-0 pointer-events-none" style={{ zIndex: -5 }} />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center max-w-4xl mx-auto">

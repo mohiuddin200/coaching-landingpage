@@ -10,7 +10,7 @@ const steps = [
     title: "Create Your Institute",
     description:
       "Sign up and set up your organization profile, logo, and preferences in minutes.",
-    color: "bg-indigo-500",
+    color: "bg-emerald-600",
   },
   {
     number: "02",
@@ -18,7 +18,7 @@ const steps = [
     title: "Configure Classes",
     description:
       "Add your class levels, subjects, batches, and schedules. The system adapts to your structure.",
-    color: "bg-blue-500",
+    color: "bg-teal-500",
   },
   {
     number: "03",
@@ -34,7 +34,7 @@ const steps = [
     title: "Let It Run",
     description:
       "Mark attendance, conduct exams, track payments, send SMS — all from one dashboard. It just works.",
-    color: "bg-violet-500",
+    color: "bg-amber-500",
   },
 ];
 
