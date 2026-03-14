@@ -7,6 +7,7 @@ import { VideoDemo } from "@/components/sections/video-demo";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { Benefits } from "@/components/sections/benefits";
 import { Roadmap } from "@/components/sections/roadmap";
+import { Pricing } from "@/components/sections/pricing";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <HowItWorks />
         <Benefits />
         <Roadmap />
+        <Pricing />
       </main>
     </>
   );
