@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+/* ── Custom Color Palette ── */
+:root {
+  --primary: #6366F1;
+  --primary-dark: #4F46E5;
+  --primary-light: #818CF8;
+  --secondary: #0EA5E9;
+  --background: #FAFBFC;
+  --surface: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --border: #E2E8F0;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+
+  --hero-gradient: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --card-shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.06);
+  --glow: 0 0 80px 20px rgba(99, 102, 241, 0.15);
+}
+
+.dark {
+  --primary: #818CF8;
+  --primary-dark: #6366F1;
+  --primary-light: #A5B4FC;
+  --secondary: #38BDF8;
+  --background: #0B1120;
+  --surface: #1E293B;
+  --text-primary: #F1F5F9;
+  --text-secondary: #CBD5E1;
+  --text-muted: #64748B;
+  --border: #334155;
+  --success: #34D399;
+  --warning: #FBBF24;
+  --error: #F87171;
+
+  --hero-gradient: linear-gradient(135deg, #4338CA 0%, #6D28D9 100%);
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.2);
+  --card-shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+  --glow: 0 0 80px 20px rgba(129, 140, 248, 0.2);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--text-primary);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-surface: var(--surface);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ── Base Styles ── */
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── Smooth transitions for theme switching ── */
+* {
+  transition-property: background-color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Exclude elements where transition causes issues */
+canvas, video, img, svg {
+  transition: none !important;
+}
+
+/* ── Selection ── */
+::selection {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Scroll Progress Bar ── */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--primary);
+  z-index: 9999;
+  transform-origin: left;
+}
+
+/* ── Glass morphism card ── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
+
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid var(--border);
+}
+
+/* ── Device Frame ── */
+.browser-frame {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.browser-frame-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.browser-frame-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
