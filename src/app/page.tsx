@@ -8,6 +8,7 @@ import { HowItWorks } from "@/components/sections/how-it-works";
 import { Benefits } from "@/components/sections/benefits";
 import { Roadmap } from "@/components/sections/roadmap";
 import { Pricing } from "@/components/sections/pricing";
+import { FAQ } from "@/components/sections/faq";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Benefits />
         <Roadmap />
         <Pricing />
+        <FAQ />
       </main>
     </>
   );
