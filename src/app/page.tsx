@@ -6,6 +6,7 @@ import { AppPreview } from "@/components/sections/app-preview";
 import { VideoDemo } from "@/components/sections/video-demo";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { Benefits } from "@/components/sections/benefits";
+import { Roadmap } from "@/components/sections/roadmap";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <VideoDemo />
         <HowItWorks />
         <Benefits />
+        <Roadmap />
       </main>
     </>
   );
