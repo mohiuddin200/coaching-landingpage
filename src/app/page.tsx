@@ -4,6 +4,7 @@ import { SocialProof } from "@/components/sections/social-proof";
 import { Features } from "@/components/sections/features";
 import { AppPreview } from "@/components/sections/app-preview";
 import { VideoDemo } from "@/components/sections/video-demo";
+import { HowItWorks } from "@/components/sections/how-it-works";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Features />
         <AppPreview />
         <VideoDemo />
+        <HowItWorks />
       </main>
     </>
   );
