@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/sections/hero";
 import { SocialProof } from "@/components/sections/social-proof";
 import { Features } from "@/components/sections/features";
@@ -9,6 +10,7 @@ import { Benefits } from "@/components/sections/benefits";
 import { Roadmap } from "@/components/sections/roadmap";
 import { Pricing } from "@/components/sections/pricing";
 import { FAQ } from "@/components/sections/faq";
+import { CTA } from "@/components/sections/cta";
 
 export default function Home() {
   return (
@@ -25,7 +27,9 @@ export default function Home() {
         <Roadmap />
         <Pricing />
         <FAQ />
+        <CTA />
       </main>
+      <Footer />
     </>
   );
 }
