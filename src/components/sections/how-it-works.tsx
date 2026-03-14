@@ -62,10 +62,10 @@ export function HowItWorks() {
 
         {/* Steps */}
         <div className="relative max-w-4xl mx-auto">
-          {/* Connecting Line — centered on icons */}
-          <div className="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-border" />
+          {/* Connecting Line — mobile: left-aligned, desktop: centered */}
+          <div className="absolute left-7 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-border" />
 
-          <div className="space-y-16">
+          <div className="space-y-10 md:space-y-16">
             {steps.map((step, i) => {
               const Icon = step.icon;
               const isEven = i % 2 === 0;
@@ -76,13 +76,34 @@ export function HowItWorks() {
                   delay={i * 0.15}
                   direction={isEven ? "left" : "right"}
                 >
-                  <div className="relative grid grid-cols-[1fr_64px_1fr] items-center gap-0 md:gap-8">
-                    {/* Left content (shows for even steps on md+) */}
-                    <div
-                      className={`hidden md:block ${
-                        isEven ? "text-right pr-4" : ""
-                      }`}
-                    >
+                  {/* Mobile Layout */}
+                  <div className="md:hidden relative flex items-start gap-4 pl-0">
+                    {/* Icon on the line */}
+                    <div className="relative z-10 shrink-0">
+                      <div
+                        className={`w-14 h-14 rounded-2xl ${step.color} flex items-center justify-center shadow-lg`}
+                      >
+                        <Icon size={24} className="text-white" />
+                      </div>
+                    </div>
+                    {/* Content */}
+                    <div className="pt-1">
+                      <span className="text-xs font-bold text-primary tracking-widest">
+                        STEP {step.number}
+                      </span>
+                      <h3 className="text-lg font-bold text-text-primary mt-1 mb-1">
+                        {step.title}
+                      </h3>
+                      <p className="text-text-secondary text-sm leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Desktop Layout */}
+                  <div className="hidden md:grid grid-cols-[1fr_64px_1fr] items-center gap-8">
+                    {/* Left content */}
+                    <div className={isEven ? "text-right pr-4" : ""}>
                       {isEven && (
                         <div className="inline-block">
                           <span className="text-xs font-bold text-primary tracking-widest">
@@ -98,7 +119,7 @@ export function HowItWorks() {
                       )}
                     </div>
 
-                    {/* Center icon — always on the line */}
+                    {/* Center icon */}
                     <div className="relative z-10 flex justify-center">
                       <div
                         className={`w-16 h-16 rounded-2xl ${step.color} flex items-center justify-center shadow-lg`}
@@ -107,12 +128,8 @@ export function HowItWorks() {
                       </div>
                     </div>
 
-                    {/* Right content (shows for odd steps on md+) */}
-                    <div
-                      className={`hidden md:block ${
-                        !isEven ? "pl-4" : ""
-                      }`}
-                    >
+                    {/* Right content */}
+                    <div className={!isEven ? "pl-4" : ""}>
                       {!isEven && (
                         <div className="inline-block">
                           <span className="text-xs font-bold text-primary tracking-widest">
@@ -126,19 +143,6 @@ export function HowItWorks() {
                           </p>
                         </div>
                       )}
-                    </div>
-
-                    {/* Mobile: content below icon (visible only on small screens) */}
-                    <div className="md:hidden col-span-3 mt-4 text-center">
-                      <span className="text-xs font-bold text-primary tracking-widest">
-                        STEP {step.number}
-                      </span>
-                      <h3 className="text-xl font-bold text-text-primary mt-1 mb-2">
-                        {step.title}
-                      </h3>
-                      <p className="text-text-secondary text-sm leading-relaxed max-w-sm mx-auto">
-                        {step.description}
-                      </p>
                     </div>
                   </div>
                 </ScrollReveal>
