@@ -38,10 +38,10 @@ export function Footer() {
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white font-bold text-sm">
-                CM
+                MB
               </div>
               <span className="text-lg font-bold text-text-primary">
-                CoachHub
+                MentorBase
               </span>
             </div>
             <p className="text-sm text-text-secondary max-w-xs leading-relaxed mb-4">
@@ -88,7 +88,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">
-            &copy; {new Date().getFullYear()} CoachHub. All rights reserved.
+            &copy; {new Date().getFullYear()} MentorBase. All rights reserved.
           </p>
           <p className="text-xs text-text-muted flex items-center gap-1">
             Made with <Heart size={12} className="text-red-500 fill-red-500" /> in Bangladesh

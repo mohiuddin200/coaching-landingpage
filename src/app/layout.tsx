@@ -12,8 +12,8 @@ const geistSans = Geist({
   display: "swap",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://coachhub.io";
-const SITE_NAME = "CoachHub";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://mentorbase.io";
+const SITE_NAME = "MentorBase";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   title: {
-    default: "CoachHub - All-in-One Coaching Institute Management Platform",
+    default: "MentorBase - All-in-One Coaching Institute Management Platform",
     template: `%s | ${SITE_NAME}`,
   },
   description:
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "CoachHub - All-in-One Coaching Institute Management Platform",
+    title: "MentorBase - All-in-One Coaching Institute Management Platform",
     description:
       "Manage students, teachers, attendance, exams, finances, and SMS notifications for your coaching institute. Self-service, multi-tenant, and mobile-ready.",
     images: [
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "CoachHub - Coaching Institute Management Platform Dashboard",
+        alt: "MentorBase - Coaching Institute Management Platform Dashboard",
         type: "image/png",
       },
     ],
@@ -92,11 +92,11 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "CoachHub - All-in-One Coaching Institute Management Platform",
+    title: "MentorBase - All-in-One Coaching Institute Management Platform",
     description:
       "Manage students, teachers, attendance, exams, finances, and SMS for your coaching institute. No technical skills required.",
     images: ["/images/og-image.png"],
-    creator: "@coachhub_io",
+    creator: "@mentorbase_io",
   },
 
   icons: {

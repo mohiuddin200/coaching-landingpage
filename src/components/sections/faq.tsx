@@ -109,7 +109,7 @@ export function FAQ() {
               </span>
             </h2>
             <p className="text-lg text-text-secondary">
-              Here are the answers to the most common questions about CoachHub.
+              Here are the answers to the most common questions about MentorBase.
             </p>
           </div>
         </ScrollReveal>

@@ -129,7 +129,7 @@ export function Hero() {
                 <div className="browser-frame-dot bg-green-400" />
                 <div className="flex-1 ml-4">
                   <div className="h-6 w-48 rounded bg-background flex items-center px-3">
-                    <span className="text-[10px] text-text-muted">app.coachhub.io/dashboard</span>
+                    <span className="text-[10px] text-text-muted">app.mentorbase.io/dashboard</span>
                   </div>
                 </div>
               </div>

@@ -54,10 +54,10 @@ export function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white font-bold text-sm">
-              CM
+              MB
             </div>
             <span className="text-lg font-bold text-text-primary hidden sm:block">
-              CoachHub
+              MentorBase
             </span>
           </a>
 

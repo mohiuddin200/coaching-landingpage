@@ -12,12 +12,12 @@ import { Pricing } from "@/components/sections/pricing";
 import { FAQ } from "@/components/sections/faq";
 import { CTA } from "@/components/sections/cta";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://coachhub.io";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://mentorbase.io";
 
 const jsonLdOrganization = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "CoachHub",
+  name: "MentorBase",
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo.svg`,
   description:
@@ -33,20 +33,20 @@ const jsonLdOrganization = {
 const jsonLdWebSite = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "CoachHub",
+  name: "MentorBase",
   url: SITE_URL,
   description:
     "All-in-one coaching institute management platform. Manage students, teachers, attendance, exams, finances, and SMS notifications.",
   publisher: {
     "@type": "Organization",
-    name: "CoachHub",
+    name: "MentorBase",
   },
 };
 
 const jsonLdSoftwareApp = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "CoachHub",
+  name: "MentorBase",
   applicationCategory: "EducationalApplication",
   operatingSystem: "Web",
   url: SITE_URL,

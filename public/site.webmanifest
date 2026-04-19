@@ -1,6 +1,6 @@
 {
-  "name": "CoachHub - Coaching Institute Management",
-  "short_name": "CoachHub",
+  "name": "MentorBase - Coaching Institute Management",
+  "short_name": "MentorBase",
   "description": "All-in-one cloud platform for coaching institute management",
   "start_url": "/",
   "display": "standalone",

@@ -33,7 +33,7 @@ npm install gsap @gsap/react three @react-three/fiber @react-three/drei framer-m
 ## 2. WHAT THIS SOFTWARE IS
 
 ### Product Name
-**Coaching Management** (or "CoachHub" / "InstituteOS" - pick a marketing-friendly name)
+**MentorBase**
 
 ### One-Liner
 An all-in-one cloud platform that lets coaching institutes manage students, teachers, attendance, exams, finances, SMS notifications, and ID cards - with zero technical skills required.

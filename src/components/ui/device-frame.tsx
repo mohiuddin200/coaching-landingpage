@@ -8,7 +8,7 @@ interface DeviceFrameProps {
   url?: string;
 }
 
-export function BrowserFrame({ children, className, url = "app.coachhub.io" }: DeviceFrameProps) {
+export function BrowserFrame({ children, className, url = "app.mentorbase.io" }: DeviceFrameProps) {
   return (
     <div className={cn("rounded-xl overflow-hidden border border-border bg-surface shadow-lg", className)}>
       {/* Browser Bar */}

@@ -52,7 +52,7 @@ export function VideoDemo() {
                 <div className="flex-1 ml-3">
                   <div className="h-6 max-w-xs rounded-md bg-background flex items-center px-3">
                     <span className="text-[11px] text-text-muted">
-                      CoachHub Demo Video
+                      MentorBase Demo Video
                     </span>
                   </div>
                 </div>

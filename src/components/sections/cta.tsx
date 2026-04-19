@@ -20,7 +20,7 @@ export function CTA() {
               Ready to Transform Your Institute?
             </h2>
             <p className="text-lg text-white/80 mb-10 max-w-xl mx-auto leading-relaxed">
-              Join 50+ coaching centers already using CoachHub to streamline
+              Join 50+ coaching centers already using MentorBase to streamline
               their operations. Start your free trial today — no credit card
               required.
             </p>
